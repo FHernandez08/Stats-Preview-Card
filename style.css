@@ -65,20 +65,25 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color: var(--primary-main);
-    
+    padding: 10rem;
+    overflow: hidden;
+    font-size: var(--fs-main);
 }
 
 .container {
     background-color: var(--primary-card);
     display: flex;
     flex-direction: row;
-    height: 31.25rem;
-    
+    height: 27.5rem;
+    border-radius: 0.75rem;
 }
 
 .info {
     width: 50%;
+    padding: 5rem;
+    display: grid;
 }
+
 
 .image {
     width: 50%;
@@ -87,4 +92,46 @@ body {
 img {
     height: 100%;
     width: 100%;
+    filter: opacity(0.3) contrast(125%) drop-shadow(0 0 0 #a5d);
+}
+
+.flex-group {
+    font-size: 0.75rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.flex-section {
+    margin-right: 3.25rem;
+    padding-top: 4rem;
+}
+
+.flex-group p {
+    color: var(--neutral-stat);
+    text-transform: uppercase;
+}
+
+.flex-group h2 {
+    color: var(--neutral-white);
+    font-family: var(--ff-main);
+    padding-bottom: 0.25rem;
+}
+
+.info h1 {
+    color: var(--neutral-white);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-heading);
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.info p {
+    color: var(--neutral-main);
+    font-family: var(--ff-label);
+    font-weight: var(--fw-regular);
+    padding-top: 0.25rem;
+}
+
+span {
+    color: var(--primary-accent);
 }
